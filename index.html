@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="tinymce/js/tinymce/tinymce.js"></script>
+  <script type="text/javascript">
+  tinymce.init({
+    selector: '#mytextarea',
+    width: '100%',
+    plugins: [
+    'advlist autolink lists link image charmap print preview anchor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table paste code help wordcount'
+  ],
+  toolbar: 'undo redo | formatselect | ' +
+  'bold italic backcolor | alignleft aligncenter ' +
+  'alignright alignjustify | bullist numlist outdent indent | ' +
+  'removeformat | help',
+  autoresize_on_init: true,
+  max_height: 1500
+  });
+  </script>
+</head>
+
+<body>
+  <form method="post">
+    <textarea id="mytextarea">Hello, World!</textarea>
+  </form>
+</body>
+</html>
